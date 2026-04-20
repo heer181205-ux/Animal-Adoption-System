@@ -206,7 +206,7 @@ cat/
 
 ## 👥 Developers
 
-**Developed with ❤️ by Heer & Mansi**
+**Developed with ❤️ by Heer **
 
 ## 📄 License
 
@@ -218,4 +218,4 @@ Contributions, issues, and feature requests are welcome!
 
 ## 📞 Support
 
-For support, email info@animalworld.com or visit our contact page.
+For support, email heer181205@gmail.com or visit our contact page.

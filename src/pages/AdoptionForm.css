@@ -1,0 +1,210 @@
+.adoption-form-page {
+  min-height: 100vh;
+  background: #f9f9f9;
+  padding: 40px 20px;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form-header h1 {
+  font-size: 2.5rem;
+  color: #B76635;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 10px;
+}
+
+.form-header p {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.animal-summary {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.animal-summary img {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.summary-info h2 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.summary-info p {
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.summary-fee {
+  color: #E67A3E;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.adoption-form {
+  background: white;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.adoption-form h3 {
+  color: #B76635;
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #E67A3E;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.checkbox-group {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: auto;
+  margin-top: 4px;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.checkbox-label span {
+  color: #666;
+  line-height: 1.6;
+}
+
+.form-actions {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  justify-content: flex-end;
+}
+
+.cancel-btn,
+.submit-btn {
+  padding: 15px 40px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.cancel-btn {
+  background: #f0f0f0;
+  color: #666;
+}
+
+.cancel-btn:hover {
+  background: #e0e0e0;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #E67A3E 0%, #B76635 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(230, 122, 62, 0.4);
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(230, 122, 62, 0.6);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .adoption-form {
+    padding: 25px;
+  }
+
+  .form-header h1 {
+    font-size: 2rem;
+  }
+
+  .animal-summary {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .cancel-btn,
+  .submit-btn {
+    width: 100%;
+  }
+}

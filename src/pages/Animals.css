@@ -1,0 +1,288 @@
+.animals-page {
+  min-height: 100vh;
+  background: #f9f9f9;
+}
+
+.animals-header {
+  background: linear-gradient(135deg, #B76635 0%, #E67A3E 100%);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.animals-header h1 {
+  font-size: 3rem;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 15px;
+}
+
+.animals-header p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+.animals-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
+}
+
+/* Filters Sidebar */
+.filters-sidebar {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+
+.filters-sidebar h2 {
+  color: #B76635;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+}
+
+.filter-group {
+  margin-bottom: 30px;
+}
+
+.filter-group label {
+  display: block;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #E67A3E;
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filter-btn {
+  padding: 12px 15px;
+  background: #f5f5f5;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.filter-btn:hover {
+  background: #e0e0e0;
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, #E67A3E 0%, #B76635 100%);
+  color: white;
+  border-color: #B76635;
+}
+
+.results-count {
+  padding-top: 20px;
+  border-top: 2px solid #e0e0e0;
+  text-align: center;
+  color: #666;
+  font-weight: 600;
+}
+
+/* Animals Grid */
+.animals-content {
+  min-height: 500px;
+}
+
+.animals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.animal-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.animal-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.animal-image-container {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.animal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.animal-card:hover .animal-image {
+  transform: scale(1.1);
+}
+
+.animal-badges {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.type-badge {
+  background: rgba(230, 122, 62, 0.95);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.status-badge {
+  background: rgba(76, 175, 80, 0.95);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.animal-info {
+  padding: 20px;
+}
+
+.animal-name {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.animal-breed {
+  color: #666;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.animal-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  color: #888;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.animal-location {
+  color: #666;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.animal-fee {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.animal-fee strong {
+  color: #E67A3E;
+  font-size: 1.1rem;
+}
+
+.view-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #E67A3E 0%, #B76635 100%);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.view-btn:hover {
+  background: linear-gradient(135deg, #B76635 0%, #E67A3E 100%);
+}
+
+/* No Results */
+.no-results {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.no-results-icon {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.no-results h2 {
+  color: #B76635;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.no-results p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .animals-container {
+    grid-template-columns: 1fr;
+  }
+
+  .filters-sidebar {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .animals-header h1 {
+    font-size: 2rem;
+  }
+
+  .animals-header p {
+    font-size: 1rem;
+  }
+
+  .animals-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filters-sidebar {
+    padding: 20px;
+  }
+}

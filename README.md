@@ -206,7 +206,7 @@ cat/
 
 ## 👥 Developers
 
-**Developed with ❤️ by Heer **
+**Developed with ❤️ by Heer
 
 ## 📄 License
 

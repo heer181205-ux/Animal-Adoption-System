@@ -30,8 +30,8 @@ function Footer() {
         <div className="footer-section">
           <h4>Contact Info</h4>
           <ul className="footer-contact">
-            <li>📧 info@animalworld.com</li>
-            <li>📞 +91 98765 43210</li>
+            <li>📧 heer181205@gmail.com</li>
+            <li>📞 +91 9601177731</li>
             <li>📍 Mumbai, India</li>
           </ul>
         </div>
@@ -50,7 +50,7 @@ function Footer() {
       <div className="footer-bottom">
         <p>&copy; 2025 Animal World. All rights reserved.</p>
         <p className="developer-credits">
-          Developed with ❤️ by <strong>Heer & Mansi</strong>
+          Developed with ❤️ by <strong>Heer</strong>
         </p>
       </div>
     </footer>
